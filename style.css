@@ -1,0 +1,43 @@
+/* *{
+    margin: 0;
+} */
+.grid{
+    display: grid;
+    grid-template-columns: 300px auto;
+    grid-template-rows: 100px minmax(250px, auto) 200px;
+    grid-template-areas: 
+        'header header'
+        'LB main'
+        'footer footer';
+        /* จองช่องตาม row ละ คอลัม */
+    row-gap: 20px;
+}
+.page-header{
+    grid-area: header;
+    background-image:
+        url('https://images.pexels.com/photos/14005887/pexels-photo-14005887.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.page-leftbar{
+    grid-area: LB;
+}
+.page-main{
+    grid-area: main;
+}
+.page-footer{
+    grid-area: footer;
+}
+
+
+
+
+.content{
+    background-color: #9399e0;
+    border: 2px solid black;
+    box-sizing: border-box;
+    padding: 10px;
+    box-shadow: 2px 2px 8px;
+}
+
